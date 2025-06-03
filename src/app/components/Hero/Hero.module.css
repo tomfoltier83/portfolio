@@ -1,0 +1,120 @@
+.container {
+  position: relative;
+  background-color: #333646;
+  width: 100%;
+  height: 75vh;
+  padding: 50px;
+  display: flex;
+  justify-items: center;
+  z-index: 999;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 15px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 45%;
+  height: 100%;
+  background-image: url(../../../../public/portrait.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  z-index: -1;
+  transform: scaleX(-1);
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5)) grayscale(100%);
+}
+
+.leftContent {
+  width: 50%;
+  padding: 0 50px;
+}
+
+.leftContent img {
+  padding-bottom: 50px;
+}
+
+.title {
+  position: relative;
+  padding-left: 35px;
+}
+
+.title h1 {
+  font-size: 70px;
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: 75px;
+  text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+.title::after {
+  content: "";
+  width: 40px;
+  height: 5px;
+  background: #32aeff;
+  position: relative;
+  bottom: -20px;
+  display: block;
+}
+
+.contacts {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 35px;
+}
+
+.contacts svg {
+  transition: all 0.4s ease;
+  cursor: pointer;
+  color: #b6b6b6;
+}
+
+.contacts svg:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 85px;
+}
+.contentSelection {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.contentSelection ul {
+  display: flex;
+  width: 45%;
+  position: relative;
+  justify-content: center;
+}
+
+.contentSelection li {
+  font-size: 20px;
+  cursor: pointer;
+  width: 33%;
+}
+
+.contentSelection h2 {
+  text-align: center;
+  transition: color 0.5s ease;
+}
+
+.contentSelectionPoint {
+  width: 10px;
+  height: 10px;
+  background-color: #32aeff;
+  border-radius: 50%;
+  position: absolute;
+  transition: left 0.5s ease-in-out;
+  bottom: -10px;
+}
