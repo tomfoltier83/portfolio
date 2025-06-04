@@ -64,7 +64,7 @@ function Contact() {
           <br /> Earum suscipit, a mollitia blanditiis voluptatibus in?
         </p>
         <Link href={"/"} className="paragraph__link">
-          <p>TechPulse.dev@gmail.com</p>
+          <p>Tom.Foltier@icloud.com</p>
           <FontAwesomeIcon icon={faArrowRightLong} />
         </Link>
       </div>

@@ -20,13 +20,8 @@ const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.leftContent}>
-        <Image
-          src="/logo.png"
-          alt="Techpulse logo"
-          width={120}
-          height={40}
-          priority
-        />
+        <Image src="/logo.png" alt="TF Logo" width={120} height={40} priority />
+
         <div className={styles.title}>
           <h1>Tom</h1>
           <h1>Foltier.</h1>
