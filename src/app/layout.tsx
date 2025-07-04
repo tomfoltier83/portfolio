@@ -1,18 +1,6 @@
 import type { Metadata } from "next";
-import { Poppins, Inconsolata } from "next/font/google";
 import "./globals.css";
-
-export const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["200", "400", "600", "700"],
-});
-
-export const inconsolata = Inconsolata({
-  variable: "--font-inconsolata",
-  subsets: ["latin"],
-  weight: ["200", "400", "600", "700"],
-});
+import { poppins, inconsolata } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Portfolio Tom FOLTIER",
