@@ -54,7 +54,7 @@ function Contact() {
   };
 
   return (
-    <div className="w-full h-[100vh] bg-[#242734] md:p-[105px] p-3 pt-12 flex z-[99] shadow-[0px_3px_15px_rgba(0,0,0,0.24)] flex-col-reverse md:flex-row gap-8">
+    <div className="w-full md:h-[50vh] bg-[#242734] md:p-[105px] p-3 pt-12 flex z-[99] shadow-[0px_3px_15px_rgba(0,0,0,0.24)] flex-col-reverse md:flex-row gap-8 pb-[180px] ">
       <div className="w-full md:w-1/2 md:h-3/4 h-1/2 flex flex-col md:justify-center gap-6 px-4 text-center md:text-left">
         <h3 className="font-(family-name:--font-inconsolata) font-extralight text-white text-lg tracking-wide">
           - Tarifs

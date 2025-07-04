@@ -70,15 +70,15 @@ function Creations() {
   }, []);
 
   return (
-    <div className="w-full bg-[#333646]  p-3 md:px-[105px] py-[0] flex flex-col relative md:h-[120vh] h-[175vh] [box-shadow:0_3px_15px_#0000003d]">
-      <div className="absolute top-[0] left-[0] flex md:-translate-y-[150px] translate-y-[190px] flex-col w-full gap-[50px]  p-3 md:px-[105px] py-[0] z-100">
-        <ul className="h-[300px] flex justify-center items-center gap-10 md:gap-[50px] flex-col md:flex-row">
+    <div className="w-full -pb-[140px] bg-[#333646] p-3 md:px-[105px] py-[0] flex flex-col md:h-[120vh] [box-shadow:0_3px_15px_#0000003d] pb-17">
+      <div className=" flex -mt-[140px] flex-col w-full gap-[50px]  p-3 md:px-[105px] py-[0] z-100">
+        <ul className="flex justify-center items-center gap-10 md:gap-[50px] flex-col md:flex-row">
           <li
             ref={(el) => {
               itemRefs.current[0] = el;
             }}
             data-index={0}
-            className="h-full p-[30px] w-full md:w-1/5 cursor-pointer [transition:all_0.5s_ease-in-out] gap-[20px] flex flex-col items-start [box-shadow:rgba(0,_0,_0,_0.24)_0px_3px_15px] rounded-[7px] hover:scale-110"
+            className="p-[30px] w-full md:w-1/5 h-[280px] cursor-pointer [transition:all_0.5s_ease-in-out] gap-[20px] flex flex-col items-start [box-shadow:rgba(0,_0,_0,_0.24)_0px_3px_15px] rounded-[7px] hover:scale-110"
             style={{
               background: visibleIndex === 0 ? "#32aeff" : "#424758",
             }}
@@ -120,7 +120,7 @@ function Creations() {
               itemRefs.current[1] = el;
             }}
             data-index={1}
-            className="h-full p-[30px] w-full md:w-1/5 cursor-pointer [transition:all_0.5s_ease-in-out] gap-[20px] flex flex-col items-start [box-shadow:rgba(0,_0,_0,_0.24)_0px_3px_15px] rounded-[7px] hover:scale-110"
+            className="p-[30px] w-full md:w-1/5 h-[280px] cursor-pointer [transition:all_0.5s_ease-in-out] gap-[20px] flex flex-col items-start [box-shadow:rgba(0,_0,_0,_0.24)_0px_3px_15px] rounded-[7px] hover:scale-110"
             style={{
               background: visibleIndex === 1 ? "#32aeff" : "#424758",
             }}
@@ -162,7 +162,7 @@ function Creations() {
               itemRefs.current[2] = el;
             }}
             data-index={2}
-            className="h-full p-[30px] w-full md:w-1/5 cursor-pointer [transition:all_0.5s_ease-in-out] gap-[20px] flex flex-col items-start [box-shadow:rgba(0,_0,_0,_0.24)_0px_3px_15px] rounded-[7px] hover:scale-110"
+            className="p-[30px] w-full md:w-1/5 h-[280px] cursor-pointer [transition:all_0.5s_ease-in-out] gap-[20px] flex flex-col items-start [box-shadow:rgba(0,_0,_0,_0.24)_0px_3px_15px] rounded-[7px] hover:scale-110"
             style={{
               background: visibleIndex === 2 ? "#32aeff" : "#424758",
             }}
@@ -200,8 +200,8 @@ function Creations() {
             </div>
           </li>
         </ul>
-        <div className="flex flex-col translate-y-[300px] md:translate-y-[0] justify-center gap-[30px] px-[30px] py-[20px] text-[50px] items-center w-full">
-          <ul className="flex gap-[50px] w-4/5 items-center justify-center">
+        <div className="flex flex-col justify-center gap-[30px] px-[30px] py-[20px] text-[50px] items-center w-full">
+          <ul className="flex gap-[50px] w-full items-center justify-center">
             <li className="[filter:drop-shadow(0_5px_5px_rgba(0,_0,_0,_0.7))] w-[33%] flex justify-center">
               <FontAwesomeIcon icon={faHtml5} />
             </li>
@@ -216,7 +216,7 @@ function Creations() {
             </li>
           </ul>
 
-          <ul className="flex gap-[60px] md:gap-[50px] w-4/5 items-center justify-center">
+          <ul className="flex gap-[60px] md:gap-[50px] w-full items-center justify-center">
             <li className="[filter:drop-shadow(0_5px_5px_rgba(0,_0,_0,_0.7))] w-[33%] flex justify-center">
               {" "}
               <Image
@@ -255,7 +255,7 @@ function Creations() {
             </li>
           </ul>
         </div>
-        <div className="flex translate-y-[300px] md:translate-y-[0] flex-col md:flex-row gap-5 md:gap-0 items-center">
+        <div className="flex flex-col md:flex-row gap-5 md:gap-0 items-center">
           <div className="w-full md:w-1/3 px-10 md:px-[30px] md:py-[20px] h-full flex flex-col justify-center gap-[25px] tracking-[1px] text-center md:text-left">
             <h3 className="font-(family-name:--font-inconsolata) font-extralight text-white text-lg tracking-wide">
               - Portfolio
